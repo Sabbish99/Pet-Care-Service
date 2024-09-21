@@ -15,15 +15,16 @@
 </head>
 
 <body>
-    <h1>this is signin page</h1>
+
 
     <div
-        class="min-h-screen lg:flex md:flex lg:items-center lg:justify-center md:items-center md:justify-center justify-center items-center border border-red-700 gap-10">
-        <div class="hidden md:inline lg:inline">
+        class="min-h-screen lg:flex md:flex lg:items-center lg:justify-center md:items-center md:justify-center justify-center items-center border border-red-700 gap-10 ">
+
+        <div class="hidden md:hidden lg:inline">
             <img src="images/Group 627.png" alt="">
         </div>
         <div class="flex justify-center items-center min-h-screen ">
-            <div class="w-1/2 lg:w-full border border-info p-4">
+            <div class="w-1/2 md:w-full lg:w-full border border-info p-4 rounded-xl bg-sky-50">
                 <h1 class="text-2xl font-semibold mb-6">Sign in</h1>
                 <label class="input input-bordered flex items-center gap-2 mb-4">
                     <input type="text" class="grow" placeholder="Enter your name" />
@@ -43,9 +44,28 @@
                 </a>
                 <div class="mt-2 w-full lg:flex lg:justify-between gap-6">
                     <button class="btn btn-outline border-info px-8 text-info">Cancel</button>
-                    <button class="btn btn-active btn-info px-8 text-white">Submit</button>
+                    <a href="homePage.html"><button class="btn btn-active btn-info px-8 text-white">Submit</button></a>
                 </div>
                 <div class="divider">Or</div>
+
+                <div class="flex justify-evenly">
+                    <a href="homePage.html">
+                        <div class="signin-btn border border-info  p-2 px-4 rounded-md bg-info text-white"><i
+                                class="fa-brands fa-facebook-f"></i></div>
+                    </a>
+                    <a href="homePage.html">
+                        <div class="signin-btn border border-info  p-2 px-4 rounded-md bg-info text-white"><i
+                                class="fa-brands fa-linkedin-in"></i></div>
+                    </a>
+                    <a href="homePage.html">
+                        <div class="signin-btn border border-info  p-2 px-4 rounded-md bg-info text-white"><i
+                                class="fa-brands fa-google"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="text-center mt-4">
+                    <p> Haven’t account? <a href="signup.html"><b class="text-info">Create</b></a></p>
+                </div>
             </div>
 
         </div>
